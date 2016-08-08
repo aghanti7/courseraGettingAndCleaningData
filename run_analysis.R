@@ -23,15 +23,15 @@ runAnalysis <- function() {
     ##retain only the mean & std columns
     xTrain <- read.table("./train/X_train.txt")[,colsWeNeed]
     xTest <- read.table("./test/X_test.txt")[,colsWeNeed]
-    ##collapse xTrain and xTest
+    ##merge xTrain and xTest
     xData <- rbind(xTrain, xTest)
 
     ##read in y_train and y_test
     yTrain <- read.table("./train/y_train.txt")
     yTest <- read.table("./test/y_test.txt")
-    ##collapse yTrain and yTest
+    ##merge yTrain and yTest
     yData <- rbind(yTrain, yTest)
-    ##add a column for activity names
+    ##replace activity ids with activity names
     yData <- as.data.table(activityLabels[yData[,1]])
     ##name the column
     names(yData) <- "activity"
@@ -39,7 +39,7 @@ runAnalysis <- function() {
     ##read in subject_train and subject_test
     subjectTrain <- read.table("./train/subject_train.txt")
     subjectTest <- read.table("./test/subject_test.txt")
-    ##collapse yTrain and yTest
+    ##merge yTrain and yTest
     subjectData <- rbind(subjectTrain, subjectTest)
     ##name the column
     names(subjectData) <- "subject"
