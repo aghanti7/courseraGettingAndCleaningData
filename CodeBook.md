@@ -43,7 +43,6 @@ For each record it is provided:
 ## Variables in the Tidy Data Set
 Each variable is named as per the following pattern:
 `[time|freq]Domain[Body|Gravity][Acc|Gyro]{Mag|JerkMag}[Mean|Std|MeanFreq].{X|Y|Z}`
-`|-------#1-------|-----#2-----|----#3----|-----#4-----|--------#5--------|--#6--|`
 
 1. `timeDomain/freqDomain`: time domain signals were captured at a constant rate of 50Hz, and FFT (fast fourier transforms) were applied to some signals to obtain frequency domain signals 
 2. `Body/Gravity`: type of acceleration signal - body or gravity acceleration
