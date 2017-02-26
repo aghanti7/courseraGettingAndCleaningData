@@ -25,4 +25,4 @@ The problem definition for this project is to read in the data set [Human Activi
 * `avgByActivityAndSubject(tidyDataSet)` - this will generate a file `./tidy_data.txt` which contains the second tidy data set
 
 ## Code Book
-This repository contains a CodeBook.md which details the variables, the data, and all transformations that were performed to clean up the data.
+This repository contains a CodeBook.md which details the variables, the data and all transformations that were performed to clean up the data.
